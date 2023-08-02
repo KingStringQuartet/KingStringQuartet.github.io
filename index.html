@@ -1,1 +1,74 @@
-hello
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navigation Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #b85353;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between; /* Spread links from either end */
+      align-items: center; /* Vertically center the links */
+    }
+
+    nav {
+      display: flex;
+      flex: 1; /* Occupy remaining space in the header */
+      justify-content: space-between; /* Spread links from either end */
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    /* Mobile menu */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+
+      nav a {
+        padding: 5px;
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  
+  <!-- Content goes here -->
+  <div>
+    <h1>Welcome to our Responsive Navigation Page</h1>
+    <p>This is a basic template for a responsive navigation page.</p>
+  </div>
+
+</body>
+</html>
